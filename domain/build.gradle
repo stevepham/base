@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation kt.std_jdk
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

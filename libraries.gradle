@@ -1,0 +1,35 @@
+ext {
+    kt = [
+            stdlib : 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72',
+            std_jdk: 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72'
+    ]
+
+    androidx = [
+            core_ktx    : 'androidx.core:core-ktx:1.3.0',
+            appcompat   : 'androidx.appcompat:appcompat:1.1.0',
+            constraint  : 'androidx.constraintlayout:constraintlayout:1.1.3',
+            nav_fragment: "androidx.navigation:navigation-fragment-ktx:2.3.0",
+            nav_ui_ktx  : "androidx.navigation:navigation-ui-ktx:2.3.0"
+    ]
+
+    common = [
+            koin       : 'org.koin:koin-core:2.1.6',
+            koin_scope : 'org.koin:koin-androidx-scope:2.1.6',
+            koin_vm    : 'org.koin:koin-androidx-viewmodel:2.1.6',
+            leak_canary: 'com.squareup.leakcanary:leakcanary-android:2.4'
+    ]
+
+    network = [
+            retrofit : 'com.squareup.retrofit2:retrofit:2.9.0',
+            moshi    : "com.squareup.moshi:moshi:1.9.3",
+            moshi_gen: "com.squareup.moshi:moshi-kotlin-codegen:1.9.3",
+            logger   : "com.squareup.okhttp3:logging-interceptor:4.8.0"
+    ]
+
+    test = [
+            junit    : 'junit:junit:4.12',
+            x_junit  : 'androidx.test.ext:junit:1.1.1',
+            espresso : 'androidx.test.espresso:espresso-core:3.2.0',
+            koin_test: 'org.koin:koin-test:2.1.6'
+    ]
+}
