@@ -5,6 +5,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation kt.std_jdk
+    api common.koin
 }
 
 sourceCompatibility = "1.8"

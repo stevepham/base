@@ -31,6 +31,8 @@ dependencies {
     implementation androidx.nav_fragment
     implementation androidx.nav_ui_ktx
 
+    implementation common.koin_scope
+    implementation common.koin_vm
 
     implementation project(":data")
 
