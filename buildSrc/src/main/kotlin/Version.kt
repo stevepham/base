@@ -14,6 +14,7 @@ object Version {
     const val Interceptor = "4.8.0"
     const val Timber = "4.7.1"
     const val Room = "2.2.5"
+    const val Serialize = "0.20.0"
 
     const val Junit = "4.13"
     const val ExtJunit = "1.1.1"

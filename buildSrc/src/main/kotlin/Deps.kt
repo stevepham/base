@@ -23,6 +23,7 @@ object Deps {
     object Kt {
         const val StdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Version.kt}"
         const val StdJdk = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Version.kt}"
+        const val Serialize = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Version.Serialize}"
     }
 
     object Androidx {
@@ -54,6 +55,7 @@ object Deps {
         const val Moshi = "com.squareup.moshi:moshi:${Version.Moshi}"
         const val MoshiGen = "com.squareup.moshi:moshi-kotlin-codegen:${Version.Moshi}"
         const val Logger = "com.squareup.okhttp3:logging-interceptor:${Version.Interceptor}"
+        const val Converter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.5.0"
     }
 
     object Test {
