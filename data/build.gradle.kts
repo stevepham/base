@@ -2,6 +2,7 @@ plugins {
     id(Deps.Plugins.Library)
     id(Deps.Plugins.KotlinAndroid)
     id(Deps.Plugins.KotlinExt)
+    id(Deps.Plugins.KotlinKapt)
 }
 
 android {
@@ -34,6 +35,11 @@ dependencies {
     api(Deps.Kt.StdLib)
     api(Deps.Androidx.CoreKtx)
     api(Deps.Androidx.AppCompat)
+
+    implementation(Deps.Androidx.RoomRuntime)
+    kapt(Deps.Androidx.RoomCompiler)
+    implementation(Deps.Androidx.RoomKt)
+
     api(project(":domain"))
 
     testImplementation(Deps.Test.JUnit4)

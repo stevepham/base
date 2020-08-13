@@ -12,6 +12,9 @@ object Version {
     const val Retrofit = "2.9.0"
     const val Moshi = "1.9.3"
     const val Interceptor = "4.8.0"
+    const val Timber = "4.7.1"
+    const val Room = "2.2.5"
+
     const val Junit = "4.13"
     const val ExtJunit = "1.1.1"
     const val Espresso = "3.2.0"

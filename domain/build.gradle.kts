@@ -6,5 +6,6 @@ plugins {
 dependencies {
     implementation(fileTree(Deps.Common.FileTree))
     implementation(Deps.Kt.StdJdk)
-    api(Deps.Common.Koin)
+    api(Deps.Koin.Core)
+    api(Deps.Common.Timber)
 }

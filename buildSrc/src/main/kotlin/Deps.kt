@@ -6,6 +6,7 @@ object Deps {
         const val Library = "com.android.library"
         const val KotlinAndroid = "kotlin-android"
         const val KotlinExt = "kotlin-android-extensions"
+        const val KotlinKapt = "kotlin-kapt"
         const val JavaLib = "java-library"
         const val Kotlin = "kotlin"
     }
@@ -30,14 +31,22 @@ object Deps {
         const val Constraint = "androidx.constraintlayout:constraintlayout:${Version.Constraint}"
         const val NavFragment = "androidx.navigation:navigation-fragment-ktx:${Version.NavFragment}"
         const val NavUiKtx = "androidx.navigation:navigation-ui-ktx:${Version.NavUiKtx}"
+
+        const val RoomRuntime = "androidx.room:room-runtime:${Version.Room}"
+        const val RoomCompiler = "androidx.room:room-compiler:${Version.Room}"
+        const val RoomKt = "androidx.room:room-ktx:${Version.Room}"
     }
 
     object Common {
         val FileTree = mapOf("dir" to "libs", "include" to listOf("*.jar"))
-        const val Koin = "org.koin:koin-core:${Version.Koin}"
-        const val KoinScope = "org.koin:koin-androidx-scope:${Version.Koin}"
-        const val KoinVm = "org.koin:koin-androidx-viewmodel:${Version.Koin}"
         const val LeakCanary = "com.squareup.leakcanary:leakcanary-android:${Version.LeakCanary}"
+        const val Timber = "com.jakewharton.timber:timber:${Version.Timber}"
+    }
+
+    object Koin {
+        const val Core = "org.koin:koin-core:${Version.Koin}"
+        const val Scope = "org.koin:koin-androidx-scope:${Version.Koin}"
+        const val ViewModel = "org.koin:koin-androidx-viewmodel:${Version.Koin}"
     }
 
     object Network {

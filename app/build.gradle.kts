@@ -32,8 +32,8 @@ dependencies {
     implementation(Deps.Androidx.NavFragment)
     implementation(Deps.Androidx.NavUiKtx)
 
-    implementation(Deps.Common.KoinScope)
-    implementation(Deps.Common.KoinVm)
+    implementation(Deps.Koin.Scope)
+    implementation(Deps.Koin.ViewModel)
 
     implementation(project(":data"))
 
