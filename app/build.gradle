@@ -1,0 +1,42 @@
+import com.ht117.config.*
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.7.20'
+}
+
+android {
+    namespace App.ID
+    compileSdk App.compileSdk
+
+    defaultConfig {
+        minSdk App.minSdk
+        targetSdk App.targetSdk
+        versionCode App.versionCode
+        versionName App.versionName
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        getByName("release") {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation Deps.Androidx.constraint
+    implementation Deps.Androidx.navFragment
+    implementation Deps.Androidx.navUIKtx
+
+    testImplementation Deps.Test.junit
+    androidTestImplementation Deps.Test.extJunit
+    androidTestImplementation Deps.Test.espresso
+}

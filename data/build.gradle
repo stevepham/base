@@ -1,0 +1,42 @@
+import com.ht117.config.*
+
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace "com.ht117.data"
+    compileSdk App.compileSdk
+
+    defaultConfig {
+        minSdk App.minSdk
+        targetSdk App.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api Deps.Koin.core
+    api Deps.Koin.android
+    api Deps.Androidx.core
+    api Deps.Androidx.appCompat
+
+    implementation Deps.Androidx.roomRuntime
+    kapt Deps.Androidx.roomCompiler
+    implementation Deps.Androidx.roomKt
+
+    testImplementation Deps.Test.junit
+    androidTestImplementation Deps.Test.extJunit
+    androidTestImplementation Deps.Test.espresso
+}
